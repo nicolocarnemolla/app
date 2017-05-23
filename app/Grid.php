@@ -14,8 +14,6 @@ class Grid extends Model
   {
     return $this->hasMany('App\Sequence');
   }
-  public function hasSequence($id){
-    return $this->has('sequences');
-  }
+  
   
 }
