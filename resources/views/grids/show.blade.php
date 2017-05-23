@@ -101,9 +101,9 @@ $(document ).ready(function() {
    
    
      $(".content").click( function() {
-         if(recorder){
+         if(recorder && !($(this).hasClass('cliccato'))){
+
         $(this).css('background-color', '#DCDCDC');
-         $(this).removeClass('content');
         var delay = new Date() - start;
         sequenza = {}
         sequenza["cella"] = this.id;
@@ -111,7 +111,9 @@ $(document ).ready(function() {
         posizione++;
         sequenze.push(sequenza);
         start=new Date();
+        $(this).addClass('cliccato');
          }
+        
     });
     
 });
