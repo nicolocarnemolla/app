@@ -110,7 +110,7 @@ $(document ).ready(function() {
         sequenza["delay"] =delay;
         posizione++;
         sequenze.push(sequenza);
-        start=new Date();
+        
         $(this).addClass('cliccato');
          }
         
